@@ -54,6 +54,12 @@ button:hover {
   background: #1e2730;
 }
 
+button::focus {
+  background: #1e2f3d;
+  outline-style: solid;
+  outline-color: cornflowerblue;
+}
+
 /* Nav Section With Hero */
 
 .main-head {
