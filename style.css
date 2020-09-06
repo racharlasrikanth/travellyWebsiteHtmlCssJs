@@ -40,7 +40,7 @@ a {
 button {
   font-family: "Bree Serif", serif;
   padding: 1.5rem 7.9rem;
-  background: rgb(184, 83, 16);
+  background: #343c44;
   border: none;
   border-radius: 0.5rem;
   color: white;
@@ -51,7 +51,7 @@ button {
 }
 
 button:hover {
-  background: rgb(143, 60, 5);
+  background: #1e2730;
 }
 
 /* Nav Section With Hero */
@@ -221,6 +221,86 @@ nav ul {
   background: #343c44;
 }
 
+/* contact information for css */
+
+#contact {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("./img/contact-mountain.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-wrapper {
+  background: rgba(19, 28, 39, 0.8);
+  width: 50%;
+  color: white;
+  border-radius: 2rem;
+}
+
+.form-head {
+  text-align: center;
+  padding: 4rem;
+}
+
+.name-form,
+.email-form {
+  text-align: center;
+  padding: 3rem;
+}
+
+.form-wrapper label {
+  margin: 0rem 4rem;
+}
+
+.form-wrapper button {
+  width: 100%;
+  padding: 1.5rem;
+  margin-top: 4rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.form-wrapper input {
+  padding: 0.8rem 7.5rem 0.8rem 1.5rem;
+  border-radius: 0.7rem;
+  border: none;
+  font-family: "Bree Serif", serif;
+}
+
+/* Footer Section */
+
+footer {
+  color: white;
+  background: rgba(19, 28, 39, 1);
+}
+
+.footer-wrapper {
+  display: flex;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  min-height: 10vh;
+  flex-wrap: wrap;
+}
+
+footer h5 {
+  flex: 1 1 40rem;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
 /* Media Query */
 
 @media screen and (max-width: 948px) {
@@ -251,5 +331,14 @@ nav ul {
     min-height: 65vh;
     margin: auto;
     justify-content: center;
+  }
+  footer {
+    text-align: center;
+  }
+  footer h5 {
+    padding-bottom: 3rem;
+  }
+  .form-wrapper {
+    width: 100%;
   }
 }
