@@ -202,6 +202,10 @@ nav ul {
   margin: 2rem 5rem;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
 }
+.card:hover {
+  box-shadow: 3px 20px 10px rgba(0, 0, 0, 0.1),
+    0px -10px 20px rgba(0, 0, 0, 0.1);
+}
 
 .cards img {
   max-width: 15%;
@@ -214,7 +218,7 @@ nav ul {
 }
 
 .card-icon {
-  background: rosybrown;
+  background: #343c44;
 }
 
 /* Media Query */
