@@ -344,4 +344,7 @@ footer ul {
   .form-wrapper {
     width: 100%;
   }
+  #contact {
+    max-height: 90vh;
+  }
 }
