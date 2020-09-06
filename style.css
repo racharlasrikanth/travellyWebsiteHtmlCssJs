@@ -47,7 +47,13 @@ button {
   font-size: 1.8rem;
   font-weight: 300;
   cursor: pointer;
+  transition: background 0.5s ease-in-out;
 }
+
+button:hover {
+  background: rgb(143, 60, 5);
+}
+
 /* Nav Section With Hero */
 
 .main-head {
@@ -99,6 +105,70 @@ nav ul {
   padding: 5rem;
 }
 
+/* Locations SECTIONS */
+
+#locations {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("./img/new-york-page.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.locations-head {
+  width: 90%;
+  margin: auto;
+}
+
+.locations-head h2 {
+  padding: 2rem 0rem;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5rem;
+}
+
+.locations-head h3 {
+  padding: 4rem 0rem;
+  background: linear-gradient(#131c27, #663b34);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cloud {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 60%;
+  pointer-events: none;
+}
+
+.moving-cloud-1 {
+  animation: cloudAnimation 4s infinite alternate ease-in-out;
+}
+
+.moving-cloud-2 {
+  top: 20%;
+  z-index: -1;
+  opacity: 0.5;
+  animation: cloudAnimation 4.5s infinite alternate ease-in-out;
+}
+
+@keyframes cloudAnimation {
+  from {
+    transform: translate(10%, -10%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+
+/* Media Query */
+
 @media screen and (max-width: 948px) {
   nav {
     text-align: center;
@@ -108,5 +178,24 @@ nav ul {
   }
   html {
     font-size: 45%;
+  }
+  .cloud {
+    width: 100%;
+  }
+  .moving-cloud-1 {
+    z-index: -1;
+  }
+  .moving-cloud-2 {
+    top: 10%;
+    z-index: -2;
+  }
+  /* .locations-head h2 {
+    align-items: center;
+    justify-content: center;
+  } */
+  .locations-head {
+    min-height: 65vh;
+    margin: auto;
+    justify-content: center;
   }
 }
